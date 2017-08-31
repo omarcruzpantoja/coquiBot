@@ -1,0 +1,16 @@
+E:\VisualStudioProjects\ServerChange\ServerChange\bin\Release\ServerChange.exe.config
+E:\VisualStudioProjects\ServerChange\ServerChange\bin\Release\ServerChange.exe
+E:\VisualStudioProjects\ServerChange\ServerChange\bin\Release\ServerChange.pdb
+E:\VisualStudioProjects\ServerChange\ServerChange\obj\Release\MainWindow.g.cs
+E:\VisualStudioProjects\ServerChange\ServerChange\obj\Release\App.g.cs
+E:\VisualStudioProjects\ServerChange\ServerChange\obj\Release\ServerChange_MarkupCompile.cache
+E:\VisualStudioProjects\ServerChange\ServerChange\obj\Release\ServerChange_MarkupCompile.lref
+E:\VisualStudioProjects\ServerChange\ServerChange\obj\Release\MainWindow.baml
+E:\VisualStudioProjects\ServerChange\ServerChange\obj\Release\ServerChange.g.resources
+E:\VisualStudioProjects\ServerChange\ServerChange\obj\Release\ServerChange.Properties.Resources.resources
+E:\VisualStudioProjects\ServerChange\ServerChange\obj\Release\ServerChange.csproj.GenerateResource.Cache
+E:\VisualStudioProjects\ServerChange\ServerChange\obj\Release\ServerChange.exe
+E:\VisualStudioProjects\ServerChange\ServerChange\obj\Release\ServerChange.pdb
+E:\VisualStudioProjects\ServerChange\ServerChange\obj\Release\ServerChange.csprojResolveAssemblyReference.cache
+E:\VisualStudioProjects\ServerChange\ServerChange\obj\Release\userInput.g.cs
+E:\VisualStudioProjects\ServerChange\ServerChange\obj\Release\userInput.baml

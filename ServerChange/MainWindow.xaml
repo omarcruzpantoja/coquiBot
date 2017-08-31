@@ -1,0 +1,49 @@
+﻿<Window x:Class="ServerChange.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ServerChange"
+        mc:Ignorable="d"
+        Icon="./coqui_logo.ico"
+        Title="CoquiBot" Height="255" Width="440" ResizeMode="CanMinimize">
+    <Window.Background>
+        <ImageBrush ImageSource="image/background.jpg" />
+    </Window.Background>
+
+    <Grid Margin="0,0,2,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="NA" Content="NA" ToolTip="Change region to NA" HorizontalAlignment="Left" Height="75" Margin="245,100,0,0" VerticalAlignment="Top" Width="150" Click="NA_Click" FontWeight="Bold" Foreground="Black" FontSize="18">
+            <Button.Background>
+                <ImageBrush ImageSource="image/merica.jpg" Opacity="0.75"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="LAN" Content="LAN" ToolTip="Change region to LAN" HorizontalAlignment="Left" Margin="45,100,0,0" VerticalAlignment="Top" Width="150" Height="75" Click="LAN_Click" FontWeight="Bold" BorderBrush="{x:Null}" FontSize="18">
+            <Button.Background>
+                <ImageBrush ImageSource="image/fiesta.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="locateClient" Focusable="False" ToolTip="Relocate client directory" Content="" HorizontalAlignment="Left" Margin="200,41,0,0" VerticalAlignment="Top" Width="43" Height="36" BorderBrush="{x:Null}" Click="locateClient_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="image/search.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="lanAcc" Content="SetLanAccount" ToolTip="Click to set your LAN account username" HorizontalAlignment="Left" Margin="71.25,180,0,0" VerticalAlignment="Top" Width="100" Foreground="White" Height="25" Click="lanAcc_Click">
+            <Button.Background>
+                <SolidColorBrush Color="Black" Opacity="0.75"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="naAcc" Content="SetNaAccount"  ToolTip="Click to set your LAN account username" HorizontalAlignment="Left" Margin="271.25,180,0,0" VerticalAlignment="Top" Width="100" Foreground="White" Height="25" Click="naAcc_Click">
+            <Button.Background>
+                <SolidColorBrush Color="Black" Opacity="0.75"/>
+            </Button.Background>
+        </Button>
+        <CheckBox x:Name="lanCheckbox" ToolTip="Check this button to automatically change usernames when changing server" Content="CheckBox" HorizontalAlignment="Left" Margin="171.25,186,0,0" VerticalAlignment="Top" Width="15" Height="15" Checked="lanCheckboxChecked"/>
+        <CheckBox x:Name="naCheckbox"  ToolTip="Check this button to automatically change usernames when changing server" Content="CheckBox" HorizontalAlignment="Left" Margin="371.25,186,0,0" VerticalAlignment="Top" Width="15" Height="15" Checked="naCheckboxChecked"/>
+        <Label x:Name="clientPath" Content="PLEASE LOCATE CLIENT &#xD;&#xA;LOCATION IN ORDER &#xD;&#xA;APP TO WORK" HorizontalAlignment="Left" Margin="10,25,0,0" VerticalAlignment="Top" FontSize="14" Width="190" Foreground="White" Height="70"/>
+    </Grid>
+</Window>
+
+    

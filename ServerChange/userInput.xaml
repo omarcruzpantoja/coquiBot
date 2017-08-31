@@ -1,0 +1,16 @@
+﻿<Window x:Class="ServerChange.userInput"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ServerChange"
+        mc:Ignorable="d"
+        Title="Set Username" Height="175" Width="250.476" ResizeMode="NoResize">
+    <Grid Margin="0,0,-6,2">
+        <Button x:Name="cancelBut" Content="Cancel" HorizontalAlignment="Left" Margin="140,92,0,0" VerticalAlignment="Top" Width="60" Height="30" Click="cancelBut_Click"/>
+        <TextBox x:Name="setName" HorizontalAlignment="Left" Height="35" Margin="50,39,0,0" TextWrapping="Wrap" Text="Username:" VerticalAlignment="Top" Width="150" GotFocus="setName_GotFocus" FontSize="18" Foreground="Black" LostFocus="setName_LostFocus"/>
+        <Button x:Name="okBut" Content="Submit" HorizontalAlignment="Left" Margin="50,92,0,0" VerticalAlignment="Top" Width="60" Height="30" Click="okBut_Click"/>
+        <Label x:Name="label" Content="Enter username" HorizontalAlignment="Left" Margin="50,5,0,0" VerticalAlignment="Top" Width="96" FontStyle="Italic" FontSize="10"/>
+
+    </Grid>
+</Window>
