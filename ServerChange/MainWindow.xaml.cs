@@ -31,6 +31,7 @@ namespace ServerChange
             verifyClient();
             //Check buttons 
             verifyButtons();
+            addOptions();
         }
 
 
@@ -39,6 +40,14 @@ namespace ServerChange
         
         //Function to check if given directory actually manages to access the settings 
         //If so, remove the textbox 
+       void addOptions()
+        {
+            string[] languages = {"US English", "MX Español", "Korean", "Français", "Deutsch", "Português","Türkçe", "GB English",
+                "SP Español", "Italiano", "Čeština", "Ελληνικά", "Magyar", "Polski", "Română", "Русский", "AU English",
+                "日本語"};
+            for (int i =0; i < languages.Length; i++)
+                languageSelector.Items.Add(languages[i]);
+        }
         private bool verifyClient()
         {
             //string path = System.Environment.CurrentDirectory.Replace("\\", "/") + "/.config";
@@ -62,12 +71,16 @@ namespace ServerChange
             //Check NA button
             string check = getLocal(2);
             if (check == "true")
+            {
                 naCheckbox.IsChecked = true;
-
+                modifyCheck(3, "true");
+            }
             check = getLocal(4);
             if (check == "true")
+            {
                 lanCheckbox.IsChecked = true;
-
+                modifyCheck(5, "true");
+            }
         }
 
         //*** END ***//
@@ -114,6 +127,7 @@ namespace ServerChange
             }
 
             string path2 = System.Environment.CurrentDirectory.Replace("\\", "/") + "/.config";
+            //string path2 = "C:/CoquiBot/.config";
             string[] lines = File.ReadAllLines(path2);
             //Rewrite the file 
             using (StreamWriter writer = new StreamWriter(path2))
@@ -298,6 +312,8 @@ namespace ServerChange
 
             return linexline[1].Replace("\"", "");
         }
+
+
         //*** END ***///
         //*** MISCELANIOUS FUNCTIONS***///
 

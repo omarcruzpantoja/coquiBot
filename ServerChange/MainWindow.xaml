@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:ServerChange"
         mc:Ignorable="d"
         Icon="./coqui_logo.ico"
-        Title="CoquiBot" Height="255" Width="440" ResizeMode="CanMinimize">
+        Title="CoquiBot" Height="359" Width="483" ResizeMode="CanMinimize">
     <Window.Background>
         <ImageBrush ImageSource="image/background.jpg" />
     </Window.Background>
@@ -15,12 +15,12 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <Button x:Name="NA" Content="NA" ToolTip="Change region to NA" HorizontalAlignment="Left" Height="75" Margin="245,100,0,0" VerticalAlignment="Top" Width="150" Click="NA_Click" FontWeight="Bold" Foreground="Black" FontSize="18">
+        <Button x:Name="NA" Content="NA" ToolTip="Change region to NA" HorizontalAlignment="Left" Height="75" Margin="258,188,0,0" VerticalAlignment="Top" Width="150" Click="NA_Click" FontWeight="Bold" Foreground="Black" FontSize="18">
             <Button.Background>
                 <ImageBrush ImageSource="image/merica.jpg" Opacity="0.75"/>
             </Button.Background>
         </Button>
-        <Button x:Name="LAN" Content="LAN" ToolTip="Change region to LAN" HorizontalAlignment="Left" Margin="45,100,0,0" VerticalAlignment="Top" Width="150" Height="75" Click="LAN_Click" FontWeight="Bold" BorderBrush="{x:Null}" FontSize="18">
+        <Button x:Name="LAN" Content="LAN" ToolTip="Change region to LAN" HorizontalAlignment="Left" Margin="58,188,0,0" VerticalAlignment="Top" Width="150" Height="75" Click="LAN_Click" FontWeight="Bold" BorderBrush="{x:Null}" FontSize="18">
             <Button.Background>
                 <ImageBrush ImageSource="image/fiesta.jpg"/>
             </Button.Background>
@@ -30,19 +30,33 @@
                 <ImageBrush ImageSource="image/search.png"/>
             </Button.Background>
         </Button>
-        <Button x:Name="lanAcc" Content="SetLanAccount" ToolTip="Click to set your LAN account username" HorizontalAlignment="Left" Margin="71.25,180,0,0" VerticalAlignment="Top" Width="100" Foreground="White" Height="25" Click="lanAcc_Click">
+        <Button x:Name="lanAcc" Content="SetLanAccount" ToolTip="Click to set your LAN account username" HorizontalAlignment="Left" Margin="84,268,0,0" VerticalAlignment="Top" Width="100" Foreground="White" Height="25" Click="lanAcc_Click">
             <Button.Background>
                 <SolidColorBrush Color="Black" Opacity="0.75"/>
             </Button.Background>
         </Button>
-        <Button x:Name="naAcc" Content="SetNaAccount"  ToolTip="Click to set your LAN account username" HorizontalAlignment="Left" Margin="271.25,180,0,0" VerticalAlignment="Top" Width="100" Foreground="White" Height="25" Click="naAcc_Click">
+        <Button x:Name="naAcc" Content="SetNaAccount"  ToolTip="Click to set your LAN account username" HorizontalAlignment="Left" Margin="284,268,0,0" VerticalAlignment="Top" Width="100" Foreground="White" Height="25" Click="naAcc_Click">
             <Button.Background>
                 <SolidColorBrush Color="Black" Opacity="0.75"/>
             </Button.Background>
         </Button>
-        <CheckBox x:Name="lanCheckbox" ToolTip="Check this button to automatically change usernames when changing server" Content="CheckBox" HorizontalAlignment="Left" Margin="171.25,186,0,0" VerticalAlignment="Top" Width="15" Height="15" Checked="lanCheckboxChecked"/>
-        <CheckBox x:Name="naCheckbox"  ToolTip="Check this button to automatically change usernames when changing server" Content="CheckBox" HorizontalAlignment="Left" Margin="371.25,186,0,0" VerticalAlignment="Top" Width="15" Height="15" Checked="naCheckboxChecked"/>
-        <Label x:Name="clientPath" Content="PLEASE LOCATE CLIENT &#xD;&#xA;LOCATION IN ORDER &#xD;&#xA;APP TO WORK" HorizontalAlignment="Left" Margin="10,25,0,0" VerticalAlignment="Top" FontSize="14" Width="190" Foreground="White" Height="70"/>
+        <CheckBox x:Name="lanCheckbox" ToolTip="Check this button to automatically change usernames when changing server" Content="CheckBox" HorizontalAlignment="Left" Margin="184,274,0,0" VerticalAlignment="Top" Width="15" Height="15" Checked="lanCheckboxChecked"/>
+        <CheckBox x:Name="naCheckbox"  ToolTip="Check this button to automatically change usernames when changing server" Content="CheckBox" HorizontalAlignment="Left" Margin="384,274,0,0" VerticalAlignment="Top" Width="15" Height="15" Checked="naCheckboxChecked"/>
+        <Label x:Name="clientPath" Content="PLEASE LOCATE CLIENT &#xD;&#xA;LOCATION IN ORDER &#xD;&#xA;APP TO WORK" HorizontalAlignment="Left" Margin="10,25,0,0" VerticalAlignment="Top" FontSize="14" Width="161" Foreground="White" Height="70"/>
+        <Label x:Name="label" Content="Brought you by EcstasyHacks" HorizontalAlignment="Left" Margin="0,294,0,0" VerticalAlignment="Top" Width="465" Foreground="White">
+            <Label.Background>
+                <SolidColorBrush Color="Black" Opacity="0.5"/>
+            </Label.Background>
+        </Label>
+        <ComboBox x:Name="languageSelector" Text="Select Language" HorizontalAlignment="Left" Margin="519,134,-164,0" VerticalAlignment="Top" Width="120" Height="29" FontSize="14">
+
+        </ComboBox>
+        <Button x:Name="button" Content="Update&#xD;&#xA;Language&#xA;" HorizontalAlignment="Left" Margin="586,188,-164,0" VerticalAlignment="Top" Width="53" Height="29" FontSize="9" Foreground="White">
+            <Button.Background>
+                <SolidColorBrush Color="Black" Opacity="0.75"/>
+            </Button.Background>
+        </Button>
+        <Label x:Name="label1" Content="Language" HorizontalAlignment="Left" Margin="554,246,-164,0" VerticalAlignment="Top" Width="85" Foreground="White" FontSize="16"/>
     </Grid>
 </Window>
 
